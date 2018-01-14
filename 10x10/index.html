@@ -1,8 +1,18 @@
 <!doctype html>
 <html lang="en">
  <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <link href="css/layout.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="css/bxslider.css" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			 $('.bxslider').bxSlider({
+
+			 });
+		});
+	</script>
  </head>
  <body>
   <div id="wrap">
@@ -17,23 +27,41 @@
         </ul>
       </div>
       <div id="banner">
-		<h1><a href="#"><div id="logo"></div></a></h1>
+    		<ul class="bxslider">
+    			<li><img src="img\banner1.jpg" /></li>
+    			<li><img src="img\banner2.jpg" /></li>
+    			<li><img src="img\banner3.jpg" /></li>
+    			<li><img src="img\banner4.jpg" /></li>
+    		</ul>
       </div>
     </header>
 
     <!---nav------------->
     <nav>
       <ul>
-        <li><a href="#">디자인 문구</a></li>
+        <li><a href="#">디자인</a>
+          <dl>
+            <dt>다이어리/플래너</dt>
+            <dd>다이어리</dd>
+            <dd>오거나이저</dd>
+            <dd>스케쥴러 / 플래너</dd>
+            <dd>캘린더</dd>
+          </dl>
+        </li>
         <li><a href="#">디지털/핸드폰</a></li>
         <li><a href="#">캠핑/트래블</a></li>
         <li><a href="#">토이</a></li>
         <li><a href="#">디자인가전</a></li>
         <li><a href="#">가구/수납</a></li>
         <li><a href="#">데코/조명</a></li>
-        <li><a href="#">키친/푸드</a></li>
-		<li><a href="#">패션의류</a></li>
-		<li><a href="#">패션잡화</a></li>
+        <li><a href="#">패브릭/생활</a></li>
+        <li><a href="#">키친</a></li>
+        <li><a href="#">푸드</a></li>
+		    <li><a href="#">패션의류</a></li>
+		    <li><a href="#">패션잡화</a></li>
+		    <li><a href="#">주얼리/시계</a></li>
+		    <li><a href="#">뷰티</a></li>
+		    <li><a href="#">베이비</a></li>
       </ul>
     </nav>
 
